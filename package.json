@@ -1,0 +1,64 @@
+{
+  "name": "email-verification-api",
+  "version": "1.0.0",
+  "description": "email-verification -api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node ./src/index.js",
+    "build": "rimraf dist && babel ./src --out-dir dist ",
+    "start": "node ./dist/index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goranjako/email-verification-api.git"
+  },
+  "keywords": [
+    "node.js",
+    "email",
+    "verification"
+  ],
+  "author": "Goran Jakovljevic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goranjako/email-verification-api/issues"
+  },
+  "homepage": "https://github.com/goranjako/email-verification-api#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/node": "^7.20.7",
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/register": "^7.21.0",
+    "@babel/runtime": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "babel-watch": "^7.7.2",
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "rimraf": "^5.0.0"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.1",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "pm2": "^5.3.0",
+    "socket.io": "^4.6.1",
+    "xss-clean": "^0.1.1"
+  }
+}
