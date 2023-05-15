@@ -25,8 +25,8 @@ class Auth {
           emailVerificationCode: otp,
         };
         let transporter = nodemailer.createTransport({
-          host: "smtp.gmail.com",
-          port: 587,
+          host: process.env.EMAIL_HOST,
+          port: process.env.EMAIL_PORT,
           secure: false, // true for 465, false for other ports 587
           auth: {
             user: process.env.EMAIL_USERNAME,
