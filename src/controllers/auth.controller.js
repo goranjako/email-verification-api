@@ -27,7 +27,7 @@ class Auth {
         let transporter = nodemailer.createTransport({
           host: process.env.EMAIL_HOST,
           port: process.env.EMAIL_PORT,
-          secure: false, // true for 465, false for other ports 587
+          secure: false, // true for 465
           auth: {
             user: process.env.EMAIL_USERNAME,
             pass: process.env.EMAIL_PASSWORD, // generated ethereal password
